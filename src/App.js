@@ -3,22 +3,43 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <form>
+      <div>
+      <h3>Alkometri</h3>
+        <label>Paino: </label>
+        <input name="weight" type="number" step="1"></input>
+      </div>
+      <div>
+        <label>Annokset: </label>
+        <select name="Annos">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div>
+        <label>Aika: </label>
+        <select name="Aika">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div>
+        <label>Sukupuoli: </label>
+        <input type="radio" name="Sukupuoli" value="Nainen" defaultChecked/>Nainen<label></label>
+        <input type="radio" name="Sukupuoli" value="Mies" /><label>Mies</label>
+      </div>
+      <div>
+        <output></output>
+      </div>
+      <button>Laske!</button>
+    </form>
   );
 }
 
